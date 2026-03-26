@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>共編歌單的第一首歌</title>
+    <style>
+        /* 深紅到微醺紫的優雅漸層 */
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* 使用深紅與黑紅漸層，營造深夜聽歌的氛圍 */
+            background: linear-gradient(135deg, #4a0000 0%, #2b0000 100%);
+            color: #eeeeee;
+        }
+
+        /* 磨砂玻璃卡片 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 35px 25px;
+            width: 85%;
+            max-width: 400px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h1.main-title {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            color: #ffcdd2;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+        p.sub-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ff5252;
+            margin: 0 0 25px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .spotify-wrapper {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            border-radius: 12px;
+            overflow: hidden;
+            line-height: 0;
+            background: #282828;
+            min-height: 352px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #fce4ec;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        }
+
+        .login-note {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1 class="main-title">猜對了嗎~</h1>
+        <p class="sub-title">共編歌單的第一首歌</p>
+        
+        <div class="spotify-wrapper">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4xk70Qur2QeRmWIzWPC63V?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer">
+            忘記建立歌單的日期了，但很高興我們現在還聽著 🎧
+            <span class="login-note">
+                (記得登入 Spotify 才能聽取完整歌曲喔)
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
